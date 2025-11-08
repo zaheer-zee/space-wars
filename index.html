@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #0a0e17;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header{
+            background: linear-gradient(to right, #0a0e17, #1a2a3a);
+            padding: 20px auto;
+            border-bottom: 1px solid #1e3a5c;
+        }
+        
+        
+        .header-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: #4dabf7;
+            letter-spacing: 2px;
+        }
+        .info{
+            background: linear-gradient(rgba(10, 14, 23, 0.8), rgba(10, 14, 23, 0.9)), url('https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .info h1{
+            font-size: 48px;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            /* text-decoration: underline; */
+        }
+        .info p{
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .milestones{
+            padding: 80px 0;
+        }
+        .section-title{
+            text-align: center;
+            font-size: 30px;
+            margin: 50px;
+            color: #4dabf7;
+            letter-spacing: 2px;
+        }
+        .milestone-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+
+        }
+        .milestone{
+            background: #1a2a3a;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .milestone:hover{
+            transform: translateY(-10px);
+        }
+        .milestone-pic{
+            height: 200px;
+            width: auto;
+            background-size: cover;
+            background-position: center;
+
+        }
+        .milestone{
+            padding: 20px;
+
+        }
+        .milestone-title{
+            color: #74c0fc;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .milestone-info{
+            font-size: 16px;
+            margin-bottom: 15px;
+            color:#8fa3b7;
+        }
+        footer{
+            background-color: #0c111b;
+            text-align: center;
+            border-top: 1px solid #1e3a5c;
+
+        }
+        @media (max-width: 760px){
+            .header-content{
+                flex-direction: column;
+                text-align: center;
+            }
+            .info h1{
+                font-size: 36px;
+            }
+            .info p{
+                font-size: 18px
+                
+            }
+            .footer-content{
+                flex-direction: column;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">Space Odessey</div>
+        </div>
+    </header>
+    <section class="info">
+        <div class="container">
+            <h1>Journey Through the Stars</h1>
+            <p>Discover the pivotal moments that shaped human space exploration, from the first satellite to ambitious missions to Mars.</p>
+            <h2>Down here explore everything you need made by zaheer 😁</h2>
+        </div>
+
+    </section>
+
+    <!-- milestones -->
+     <section class="milestones">
+        <div class="container">
+            <h2 class="section-title">Key Milestones in Space Exploration</h2>
+            <div class="milestone-grid">
+            <div class="milestone">
+                <div class="milestone-pic" style="background-image: url(./all_images/sputnik1.png)"></div>
+                <div class="milestone-content">
+                    <h3 class="milestone-title">Sputnik I Launch</h3>
+                    
+                    <p class="milestone-info">On October 4, 1957, the Soviet Union launched Sputnik 1, the first artificial Earth satellite.</p>
+        
+                </div>
+            </div>
+            <div class="milestone">
+                <div class="milestone-pic" style="background-image: url(./all_images/yurigagrin.png);"></div>
+                <div class="milestone-content">
+                    <h3 class="milestone-title">Yuri Gagarin - First Human in Space </h3>
+                    <p class="milestone-info">On April 12, 1961, humanity achieved a monumental milestone in space exploration when Soviet cosmonaut Yuri Gagarin became the first human to journey into outer space.</p> 
+                                 
+                </div>
+            </div>
+            <div class="milestone">
+                <div class="milestone-pic" style="background-image: url(./all_images/apollo11.png);"></div>
+                <div class="milestone-content">
+                    <h3 class="milestone-title">Apollo 11 Moon Landing</h3>
+                    <p class="milestone-info">July 20, 1969: Neil Armstrong and Buzz Aldrin land on the moon, with Michael Collins orbiting above.</p> 
+                                 
+                </div>
+            </div>
+            <div class="milestone">
+                <div class="milestone-pic" style="background-image: url(./all_images/space-shuttle.png);"></div>
+                <div class="milestone-content">
+                    <h3 class="milestone-title">Space Shuttle Columbia First Flight</h3>
+                    <p class="milestone-info">The Space Shuttle Columbia's maiden flight, STS-1, on April 12, 1981, marked a pivotal moment in space exploration.</p> 
+                                 
+                </div>
+            </div>
+            <div class="milestone">
+                <div class="milestone-pic" style="background-image: url(./all_images/ISS-pic.png);"></div>
+                <div class="milestone-content">
+                    <h3 class="milestone-title">International Space Station</h3>
+                    <p class="milestone-info">The International Space Station, a symbol of global cooperation, is a permanently crewed orbital laboratory soaring 400 kilometers above Earth, where international astronauts live and work to advance science and technology for all humanity</p> 
+                                 
+                </div>
+            </div>
+            <div class="milestone">
+                <div class="milestone-pic" style="background-image: url(./all_images/rover.png);"></div>
+                <div class="milestone-content">
+                    <h3 class="milestone-title">mars-rover</h3>
+                    <p class="milestone-info">The landing of robotic rovers on Mars represents one of humanity's most ambitious and successful endeavors in space exploration. These missions, beginning with Pathfinder and continuing through Spirit, Opportunity, Curiosity, and Perseverance, have redefined our understanding of the Red Planet, searching for signs of past life and assessing its potential for future human exploration.</p> 
+                                 
+                </div>
+            </div>
+            </div>
+        </div>
+     </section>
+     <footer>
+        <div class="container">
+            <div class="footer-content">2025 all rights of zaheer. completed at midnight. 😭</div>
+        </div>
+     </footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body{
+    background-color: #0a0e17;
+    line-height: 1.6;
+    color: #ffffff;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header{
+    background: linear-gradient(to right, #0a0e17, #1a2a3a);
+    padding: 20px 0;
+    border-bottom: 1px solid #1e3a5c;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
